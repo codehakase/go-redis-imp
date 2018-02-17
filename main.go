@@ -11,7 +11,7 @@ import (
 func main() {
 	// open and listen on tcp port
 	listener, err := net.Listen("tcp", ":1234")
-
+	log.Println("Service started, listening on port 1234...")
 	defer listener.Close()
 	if err != nil {
 		log.Fatalln(err)

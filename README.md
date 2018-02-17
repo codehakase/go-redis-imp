@@ -35,8 +35,4 @@ GET alias
 
 DEL alias
 
-
-QUIT
-... closing connection...
-
 ```
