@@ -67,7 +67,7 @@ func commandServer(commands chan Command) {
 		case "GET": // GET {KEY}
 			key := command.Fields[1]
 			value := data[key]
-			noBlockWrite(command.Response, value)
+			noBlockWrite(command.Response, "...->"+value)
 		case "SET": // SET NEW {KEY: VALUE}
 			if len(command.Fields) != 3 {
 				noBlockWrite(command.Response, "expected value")
